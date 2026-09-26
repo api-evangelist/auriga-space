@@ -1,0 +1,9 @@
+generated: "2026-09-26"
+method: none
+source: "No MCP server discovered after probing https://www.aurigaspace.com/"
+deployment:
+  mode: none
+  install: ""
+  package: ""
+  auth: unknown
+  verified: derived

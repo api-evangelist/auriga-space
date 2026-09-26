@@ -1,23 +1,52 @@
 aid: auriga-space
+
 name: Auriga Space
-description: 'Auriga Space is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Auriga Space is a nascent aerospace company focused on developing advanced in‑orbit servicing platforms and modular payload containers. The firm aims to enable on‑demand satellite refueling, repair, and upgrade capabilities, reducing launch costs and extending mission lifetimes. While still early in its commercial rollout, Auriga Space has announced successful ground‑testing of its Hermes electromagnetic launch container and is building partnerships with satellite operators and launch service providers to pioneer next‑generation space logistics.'
+
 url: https://raw.githubusercontent.com/api-evangelist/auriga-space/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
 - Company
-apis: []
+- Aerospace
+- Satellite
+- In‑orbit‑servicing
+- Space‑logistics
+- Emerging‑tech
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/auriga-space-hosts.yml
+- type: Vendors
+  url: vendors/auriga-space-vendors.yml
+- type: DomainSecurity
+  url: security/auriga-space-domain-security.yml
 - type: Website
   url: https://www.nasdaqprivatemarket.com/
+
+apis: []
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
